@@ -1,2 +1,2 @@
 # CLASS前端项目
-# 技术栈 vue+webpack+typescript 
+# 技术栈 vue + vuex + vue-router + webpack + typescript + babel
