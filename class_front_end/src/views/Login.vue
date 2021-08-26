@@ -9,7 +9,10 @@
 </template>
 
 <script>
-export default {
+// defineComponent最重要的是：在TypeScript下，给予了组件 正确的参数类型推断 。
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'L',
   data () {
     return {
@@ -21,7 +24,7 @@ export default {
       return (-1)
     }
   }
-}
+})
 </script>
 
 <style scoped>
