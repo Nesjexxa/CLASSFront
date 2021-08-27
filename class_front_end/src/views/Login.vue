@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <studentIndex></studentIndex>
+  </div>
   <div  style="background-color: #454545; width:100%;height:100%">
 <div id='login' class="whole">
   <h1 >账号: <input name="userId" id="userId" type="text" placeholder="请输入你的账号"></h1>
@@ -11,6 +14,7 @@
 <script>
 // defineComponent最重要的是：在TypeScript下，给予了组件 正确的参数类型推断 。
 import { defineComponent } from 'vue'
+import studentIndex from '@/components/studentEnd/studentIndex'
 
 export default defineComponent({
   name: 'L',
@@ -23,6 +27,9 @@ export default defineComponent({
     match_Pwd () {
       return (-1)
     }
+  },
+  components: {
+    studentIndex
   }
 })
 </script>
