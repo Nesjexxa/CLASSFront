@@ -1,9 +1,7 @@
 <template>
-<div id="studentCourseView" class="studentCourseView">
-  <ul>
-    <li v-for="item in courses" v-bind:key="item">
-      <label>{{item}}</label>
-    </li>
+<div id="studentCourseView">
+  <ul class="simpleBar">
+    <li v-for="item in courses" v-bind:key="item" >{{item}}</li>
   </ul>
 </div>
 </template>
@@ -20,12 +18,5 @@ export default {
 </script>
 
 <style scoped>
-studentCourseView{
-  text-align: left;
-  position: absolute;
-  top:10%;
-  background-color: darkgoldenrod;
-  width:100%;
-  height:800px;
-}
+
 </style>

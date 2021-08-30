@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <studentIndex></studentIndex>
-  </div>
   <div  style="background-color: #454545; width:100%;height:100%">
 <div id='login' class="whole">
   <h1 >账号: <input name="userId" id="userId" type="text" placeholder="请输入你的账号"></h1>
@@ -29,7 +26,6 @@ export default defineComponent({
     }
   },
   components: {
-    studentIndex
   }
 })
 </script>
@@ -52,7 +48,7 @@ h1{
   clear:both;
   background-color: #E4E4E4;
   position:absolute;
-  left:40%;
+  left:30%;
   top:30%;
 }
 </style>

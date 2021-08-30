@@ -1,15 +1,17 @@
 <template>
-<div id="indexTop" class="indexTop">
+  <div class="index">
+<span id="indexTop" class="indexTop">
 <HEAD></HEAD>
-</div>
-<div id="indexUnder" class="indexUnder">
-  <div id="indexLeft" class="indexLeft">
+</span>
+<span id="indexUnder" class="indexUnder">
+  <span id="indexLeft" class="indexLeft">
     <indexLeftInfoBar></indexLeftInfoBar>
-  </div>
-  <div id="indexRight" class="indexRight">
+  </span>
+  <span id="indexRight" class="indexRight">
       <studentCourseView></studentCourseView>
+  </span>
+</span>
   </div>
-</div>
 </template>
 
 <script>
@@ -27,27 +29,37 @@ export default {
 </script>
 
 <style scoped>
-.indexTop{
-  position: relative;
-  height: 100px;
+
+.index {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-.indexUnder{
-  position: relative;
+
+.indexTop,
+footer {
+  flex: 1;
 }
-.indexLeft{
-  left: 0;
-  position:absolute;
-  width:40%;
-  height: 800px;
-  float: left;
-  background-color: antiquewhite;
+
+.indexUnder {
+  display: flex;
+  flex: 1;
 }
-.indexRight{
-  background-color: darkgoldenrod;
-  position:absolute;
-  left: 40%;
-  width:60%;
-  height: 800px;
-  float: right;
+
+.indexRight {
+  dispay: flex;
+  flex: 1;
+}
+
+.indexLeft {
+  /* 两个边栏的宽度设为12em */
+  display: flex;
+  flex: 0 0 12em;
+  width: 200px;
+}
+
+.indexLeft {
+  /* 导航放到最左边 */
+  order: -1;
 }
 </style>
