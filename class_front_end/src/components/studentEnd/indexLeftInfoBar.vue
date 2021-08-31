@@ -7,6 +7,7 @@
       <li>学号:{{stuID}}</li>
     </ul>
 </div>
+  <button style="margin: auto" @click="rebackClicked">返回</button>
 </div>
 </template>
 
@@ -17,6 +18,11 @@ export default {
     return {
       name: '张三',
       stuID: 'SA20218888'
+    }
+  },
+  methods: {
+    rebackClicked () {
+      this.$router.push('../login')
     }
   }
 }

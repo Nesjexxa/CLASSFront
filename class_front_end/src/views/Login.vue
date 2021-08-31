@@ -3,7 +3,7 @@
 <div id='login' class="whole">
   <h1 >账号: <input name="userId" id="userId" type="text" placeholder="请输入你的账号"></h1>
   <h1 >密码: <input name="userPwd" id="userPwd" type="password" placeholder="请输入密码"></h1>
-  <button  v-on:click="match_Pwd" style="display:block;margin:0 auto">登录</button>
+<button @click="loginClicked">登陆</button>
 </div>
   </div>
 </template>
@@ -23,6 +23,9 @@ export default defineComponent({
   methods: {
     match_Pwd () {
       return (-1)
+    },
+    loginClicked () {
+      this.$router.push('../home')
     }
   },
   components: {
