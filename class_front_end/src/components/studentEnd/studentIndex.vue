@@ -1,16 +1,16 @@
 <template>
   <div class="index">
-<span id="indexTop" class="indexTop">
+<div id="indexTop" class="indexTop">
 <HEAD></HEAD>
-</span>
-<span id="indexUnder" class="indexUnder">
-  <span id="indexLeft" class="indexLeft">
+</div>
+<div id="indexUnder" class="indexUnder">
+  <div id="indexLeft" class="indexLeft">
     <indexLeftInfoBar></indexLeftInfoBar>
-  </span>
-  <span id="indexRight" class="indexRight">
+  </div>
+  <div id="indexRight" class="indexRight">
       <studentCourseView></studentCourseView>
-  </span>
-</span>
+  </div>
+</div>
   </div>
 </template>
 
@@ -32,28 +32,29 @@ export default {
 
 .index {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
 }
 
-.indexTop,
-footer {
-  flex: 1;
+.indexTop{
+  flex:1;
+  height: 3px;
 }
 
 .indexUnder {
   display: flex;
   flex: 1;
+  height: 500px;
+  border: outset;
+  border-color: #42b983;
 }
 
 .indexRight {
-  dispay: flex;
   flex: 1;
+  border: outset;
+  border-color: #42b983;
 }
 
 .indexLeft {
-  /* 两个边栏的宽度设为12em */
-  display: flex;
   flex: 0 0 12em;
   width: 200px;
 }

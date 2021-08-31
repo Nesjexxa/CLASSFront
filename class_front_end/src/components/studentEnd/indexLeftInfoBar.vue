@@ -1,6 +1,6 @@
 <template>
 <div id="leftInfoBar">
-    <img src='../../assets/headimg.png'>
+    <img id="headImg" src='../../assets/headimg.png'>
   <div id="info" class="info">
     <ul>
       <li>姓名:{{name}}</li>
@@ -23,5 +23,19 @@ export default {
 </script>
 
 <style scoped>
-
+#headImg{
+  height: 50px;
+  width: 50px;
+  border-radius: 25%;
+  margin: auto;
+}
+#leftInfoBar{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#info{
+  display: flex;
+  flex-direction: column;
+}
 </style>

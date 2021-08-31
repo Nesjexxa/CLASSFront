@@ -17,5 +17,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
+home{
+  display: flex;
+}
 </style>
